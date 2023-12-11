@@ -8,8 +8,9 @@
 </head>
 <body>
     <!-- <b><h1>RAIN PREDICTION</h1></b> -->
-    <div class="datas">
+    <div class="login">
         <b><h1>RAIN PREDICTION</h1></b>
+        <form action="{{url_for('predict')}}" method="post">
         <div>
             <label for="data1">Minimum temperature of the day</label>
             &nbsp;&nbsp;
@@ -69,11 +70,10 @@
             <input type="text" placeholder="enter 1 if rain or 0 if not">
         </div><br>
         <div class="result">
-            <button>Predict</button>
+            <button type="submit">Predict</button>
            </div>
+        </form>
     </div>
-   <!-- <div class="result">
-    <button>Predict</button>
-   </div> -->
+    {{prediction_text}}
 </body>
 </html>
