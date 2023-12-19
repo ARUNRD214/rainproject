@@ -1,0 +1,64 @@
+body{
+    background-image: url('cloud2.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    color: var(--white);
+    display: flex;
+    /* border: 2px solid black;     */
+}
+h1{
+    margin-left: 40px;
+    color: #0a7569;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.datas{
+    /* display: flex; */
+    justify-content: center;
+    align-items: center;
+    border: 1px solid black; 
+    background-color: rgb(165, 150, 150); 
+    height: 700px;
+    width: 1000px;
+    padding-left: 100px;
+    
+    min-width: 500px;
+    margin-left: 100px;
+    font-size: large;
+} 
+
+input{
+    width: 25%;
+    height: 50;
+    font-size: 0.5em;
+    border: 1px solid #006D77;
+    box-shadow: 2px;
+    border-radius: 8px;
+    padding: 10px;
+    /* box-sizing: border-box; */
+    /* margin: 5px auto 15px; */
+}
+
+input:focus{
+    background-color: #83C5BE;
+}
+button{
+    text-align: center;
+    margin-left: 100px;
+    width: 25%;
+}
+button{
+    background-color: #34b881;
+    font-size: 30px;
+    color: rgb(14, 4, 5);
+    margin-top:20px ;
+    margin-left: 170px;
+    padding:15px 25px;
+    border-radius: 10px;
+    border: 1px solid #006D77;
+    box-shadow: 2px;
+}
+
+button:hover{
+    background-color: #323fef;
+}
