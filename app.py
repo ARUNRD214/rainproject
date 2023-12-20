@@ -31,12 +31,11 @@ def predict():
     data=[float(x) for x in request.form.values()]
     final_input=scalar.transform(np.array(data).reshape(1,-1))
     print(final_input)
-    b='\U0001F603'
     output=model.predict(final_input)[0]
     if(output==0):
-       return render_template("home.html",prediction_text="Tomorrow will be a SUNNYDAY"+b)
+       return render_template("home.html",prediction_text="Tomorrow will be a SUNNYDAY")
     else:
-        return render_template("home.html",prediction_text="Tomorrow will be a RAINY DAY"+b)
+        return render_template("home.html",prediction_text="Tomorrow will be a RAINY DAY")
     
 
     
