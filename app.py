@@ -17,7 +17,7 @@ def predict_api():
     print(np.array(list(data.values())).reshape(1,-1))
     new_data=scalar.transform(np.array(data_list).reshape(1,-1))
     output=model.predict(new_data)
-    print(output[0])
+    #print(output[0])
     a='\U0001F603'
 
     #return jsonify(int(output[0]))
