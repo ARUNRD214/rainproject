@@ -13,10 +13,10 @@ def home():
 def predict_api():
     data=request.json[('data')]
     data_list=list(data.values())
-    print(data)
-    print(np.array(list(data.values())).reshape(1,-1))
+    #print(data)
+    #print(np.array(list(data.values())).reshape(1,-1))
     new_data=scalar.transform(np.array(data_list).reshape(1,-1))
-    output=model.predict(new_data)
+    output=model.predict(new_data)[0]
     #print(output[0])
     a='\U0001F603'
 
