@@ -22,9 +22,9 @@ def predict_api():
 
     #return jsonify(int(output[0]))
     if(int(output)==0):
-        return jsonify("Tomorrow will be a SUNNY Day"+a)
+        return jsonify("Tomorrow will be a SUNNY Day")
     else:
-        return jsonify("Tomorrow will be a RAINY day"+a)
+        return jsonify("Tomorrow will be a RAINY day")
 
 @app.route('/predict',methods=['POST'])
 def predict():
